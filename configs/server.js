@@ -6,6 +6,7 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import { dbConnection } from './mongo.js';
 import usersRoutes from '../src/users/user.routes.js';
+import loginRoutes from '../src/auth/auth.routes.js';
 
 
 class Server {
@@ -13,6 +14,7 @@ class Server {
         this.app = express();
         this.port = process.env.PORT;
         this.usersPath = '/GestorOpiniones/v1/users';
+        this.loginPath = '/GestorOpiniones/v1/login';
         this.middlewares();
         this.conectarDB();
         this.routes();
@@ -32,6 +34,7 @@ class Server {
 
     routes(){
         this.app.use(this.usersPath, usersRoutes);
+        this.app.use(this.loginPath, loginRoutes);
     }
 
     listen() {

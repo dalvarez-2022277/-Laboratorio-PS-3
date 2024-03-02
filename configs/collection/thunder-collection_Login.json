@@ -1,0 +1,28 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Login",
+    "dateExported": "2024-03-02T06:16:19.867Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2daf4993-312a-454a-8072-e859a42aef64",
+            "colId": "a6a35ef7-90d2-4364-bb4e-bae0ec71d48a",
+            "containerId": "",
+            "name": "loginPost",
+            "url": "http://localhost:3000/GestorOpiniones/v1/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-02T06:15:40.231Z",
+            "modified": "2024-03-02T06:15:57.206Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Diego Alvarez\",\n  \"password\": \"1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
