@@ -22,11 +22,16 @@
   },
   "homepage": "https://github.com/dalvarez-2022277/-Laboratorio-PS-3#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "express": "^4.18.2",
+    "express": "^4.18.3",
+    "express-validator": "^7.0.1",
     "form": "^0.2.4",
+    "from": "^0.1.7",
     "helmet": "^7.1.0",
+    "import": "^0.0.6",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.2.0",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.0"

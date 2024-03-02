@@ -1,0 +1,28 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Users",
+    "dateExported": "2024-03-02T04:58:42.375Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ca84ce0f-9572-42f4-8df0-6a6a0b6f9496",
+            "colId": "1b193a7b-1a4d-4e52-ac18-cfd8ca503ece",
+            "containerId": "",
+            "name": "userPost",
+            "url": "http://localhost:3000/GestorOpiniones/v1/users",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-02T04:54:06.686Z",
+            "modified": "2024-03-02T04:55:03.206Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Diego Alvarez\",\n  \"email\": \"dalvarez-2022277@gmail.com\",\n  \"password\": \"1234567\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

@@ -3,9 +3,9 @@
 import mongoose from 'mongoose';
 
 export const dbConnection = async () => {
-    try{
+    try {
         mongoose.connection.on('error', () => {
-            console.log('MongoDB | could not be connect to mongodb')
+            console.log('MongoDB | could not be connect to mongodb');
             mongoose.disconnect();
         })
         mongoose.connection.on('connecting', () => {
@@ -14,7 +14,7 @@ export const dbConnection = async () => {
         mongoose.connection.on('connected', () => {
             console.log('MongoDB | connected to mongoDB');
         })
-        mongoose.connection.once('open', () =>{
+        mongoose.connection.once('open', () => {
             console.log('MongoDB | connected to dabase')
         })
         mongoose.connection.on('reconnected', () => {
@@ -24,11 +24,11 @@ export const dbConnection = async () => {
             console.log('MongoDB | disconnected')
         })
 
-        await mongoose.connect(process.env.URI_MONGO, {
+        await mongoose.connect(process.env.MONGO_DB, {
             serverSelectionTimeoutMS: 5000,
             maxPoolSize: 50
         });
-    }catch(e){
-        console.log('Data base error to conected', err)
+    } catch (e) {
+        console.log('Database connection failed', err)
     }
 }
