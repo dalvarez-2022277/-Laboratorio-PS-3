@@ -8,7 +8,7 @@ const routers = Router();
 routers.post(
     '/',
     [
-        check("password", "The key is an a caracter obligatory").not().isEmpty(),
+        check("password", "Es obligatorio").not().isEmpty(),
         validarCampos
     ],
     login
