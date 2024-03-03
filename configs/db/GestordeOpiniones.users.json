@@ -1,0 +1,10 @@
+[{
+  "_id": {
+    "$oid": "65e4cb37bad4ecfd86980727"
+  },
+  "name": "Diego Alvarez",
+  "email": "dalvarez-2022277@gmail.com",
+  "estado": true,
+  "password": "$2a$10$Z1rnu9AI4o.gPU2oIJk1k.WDGr.B2r3WNS.aBywSDb7/cdJGiSLO2",
+  "__v": 0
+}]

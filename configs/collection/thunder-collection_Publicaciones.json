@@ -1,0 +1,99 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Publicaciones",
+    "dateExported": "2024-03-03T20:48:55.357Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f0e21ef8-d5a8-4dea-a4c7-c727ae88e4ee",
+            "colId": "903548aa-205b-4bf5-8bd1-3369026624c5",
+            "containerId": "",
+            "name": "publicacionesPost",
+            "url": "http://localhost:3000/GestorOpiniones/v1/publicaciones",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-03T16:48:20.191Z",
+            "modified": "2024-03-03T19:13:27.959Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Titulo\": \"Publicacion Practicas225\",\n  \"Categoria\": \"noticia-Practicas225\",\n  \"Texto\": \"lapruebatoken25\",\n  \"Comentario\": \"si no consigue token perdio 24 veces\",\n  \"iduser\": \"65e212b3502fdc50055a8b5d\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1d091b50-12fa-4cf1-8f9d-6a13a3e0f0e5",
+            "colId": "903548aa-205b-4bf5-8bd1-3369026624c5",
+            "containerId": "",
+            "name": "publicacionesPut",
+            "url": "http://localhost:3000/GestorOpiniones/v1/publicaciones/65e4d2d54cec7bcfbe3b8575",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-03T16:48:20.192Z",
+            "modified": "2024-03-03T19:43:59.900Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyYzNjOTJlYzZmMGRiNjc0NmEzYTYiLCJpYXQiOjE3MDk0OTUwMTIsImV4cCI6MTcwOTQ5ODYxMn0.LckEFioafjCmxWIGIMmi36A2sUo-mzIVwE00PfXn6Uk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Categoria\": \"otra-noticia-bro\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5f5cc41e-936a-47f4-ac2d-b9ff18c3eff2",
+            "colId": "903548aa-205b-4bf5-8bd1-3369026624c5",
+            "containerId": "",
+            "name": "publicacionesGet",
+            "url": "http://localhost:3000/GestorOpiniones/v1/publicaciones",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-03-03T16:48:20.193Z",
+            "modified": "2024-03-03T20:02:30.202Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ccaf70bb-6f45-4f24-adbe-7b7315909fac",
+            "colId": "903548aa-205b-4bf5-8bd1-3369026624c5",
+            "containerId": "",
+            "name": "publicacionesDelete",
+            "url": "http://localhost:3000/GestorOpiniones/v1/publicaciones/65e4d2d54cec7bcfbe3b8575",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-03-03T16:48:20.194Z",
+            "modified": "2024-03-03T20:41:39.909Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUyYzNjOTJlYzZmMGRiNjc0NmEzYTYiLCJpYXQiOjE3MDk0OTg0NzYsImV4cCI6MTcwOTUwMjA3Nn0.IyDnmurH_-phGiKI7_uCeOmYScKbwYDsvuqn0bTVcec"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f15fccc4-9d92-446a-b0cd-bb1c5449819b",
+            "colId": "903548aa-205b-4bf5-8bd1-3369026624c5",
+            "containerId": "",
+            "name": "publicacionesById",
+            "url": "http://localhost:3000/GestorOpiniones/v1/publicaciones/65e4d2d54cec7bcfbe3b8575",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-03-03T16:48:20.195Z",
+            "modified": "2024-03-03T20:03:49.369Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
